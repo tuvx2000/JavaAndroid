@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "123345400347",
+    "project_id": "xuantuandroid",
+    "storage_bucket": "xuantuandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123345400347:android:35083f30dff0d79b29febe",
+        "android_client_info": {
+          "package_name": "com.example.xuantuandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123345400347-3pba8f2j9of2pmo7l8tijhm8n92g5fsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfJufdiOPEoRLiHrCAQmWTIXDQMDeawPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123345400347-3pba8f2j9of2pmo7l8tijhm8n92g5fsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
