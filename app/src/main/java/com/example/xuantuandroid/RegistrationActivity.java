@@ -28,6 +28,12 @@ public class RegistrationActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         auth = FirebaseAuth.getInstance();
+
+        if(auth.getCurrentUser() != null){
+            startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
+            finish();
+        }
+
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -59,6 +65,8 @@ public class RegistrationActivity extends AppCompatActivity {
             return;
         }
 
+
+        Toast.makeText(this,"Step here!",Toast.LENGTH_LONG).show();
         auth.createUserWithEmailAndPassword(userEmail,userPassword)
                 .addOnCompleteListener(RegistrationActivity.this, new OnCompleteListener<AuthResult>() {
             @Override

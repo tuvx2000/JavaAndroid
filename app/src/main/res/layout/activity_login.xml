@@ -53,8 +53,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:onClick="signup"
-        android:text="Sign Up"
+        android:onClick="signin"
+        android:text="Sign In"
 
         android:textAllCaps="false"
         android:textStyle="bold"
