@@ -23,16 +23,17 @@ public class SliderAdapter extends PagerAdapter {
 
     }
 
-    int imageArray[] ={
+
+    int imagesArray[] ={
             R.drawable.onboardscreen1,
             R.drawable.onboardscreen2,
-            R.drawable.onboardscreen3,
+            R.drawable.onboardscreen3
     };
 
     int headingArray[] = {
             R.string.first_slide,
             R.string.second_slide,
-            R.string.third_slide,
+            R.string.third_slide
     };
 
     int descriptionArray[] = {
@@ -63,13 +64,13 @@ public class SliderAdapter extends PagerAdapter {
         TextView heading = view.findViewById(R.id.heading);
         TextView description = view.findViewById(R.id.description);
 
-        imageView.setImageResource(imageArray[position]);
+        imageView.setImageResource(imagesArray [position]);
         heading.setText(headingArray[position]);
         description.setText(descriptionArray[position]);
 
         container.addView(view);
 
-        return super.instantiateItem(container, position);
+        return view;
     }
 
     @Override
