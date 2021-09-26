@@ -1,20 +1,20 @@
-package com.example.xuantuandroid;
+package com.example.xuantuandroid.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.xuantuandroid.R;
+import com.example.xuantuandroid.adapters.SliderAdapter;
 
 public class onBoardingActivity extends AppCompatActivity {
 
@@ -51,6 +51,15 @@ public class onBoardingActivity extends AppCompatActivity {
         // Goi Adapter
         sliderAdapter = new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
+        
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(onBoardingActivity.this, RegistrationActivity.class));
+
+                finish();
+            }
+        });
 
     }
 /*
